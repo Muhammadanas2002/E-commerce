@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .desktopMenu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .desktopMenu a:hover {
+    color: #007bff;
+  }
+  
+  .searchBox {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .searchBox:focus {
+    border-color: #007bff;
+  }
+  
+  .mobileToggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .desktopMenu {
+      display: none;
+    }
+  
+    .mobileToggle {
+      display: block;
+    }
+  }
+  
